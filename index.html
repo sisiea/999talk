@@ -6,12 +6,12 @@
         #position_demo {
             position: absolute;
             right: 50%;
-            top: 50%;
+            bottom: 50%;
         }
     </style>
 </head>
 <body>
-<h1>Hello Bot</h1>
+<h1>发财你好，我是九神, 点我的头开始对话</h1>
 <div id="position_demo"></div>
 
 <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/0.1.0-beta.5/libs/oversea/index.js"></script>
@@ -29,9 +29,11 @@
             bot_id,
         },
         componentProps: {
+            lang: 'zh-CN',
             title,
             icon,
             width,
+            layout: 'mobile',
         },
         el: document.getElementById('position_demo')
     });
